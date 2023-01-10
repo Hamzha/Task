@@ -60,3 +60,10 @@ def signup(request):
 # @login_required(login_url='')
 def addDeals(request):
     return render(request, 'add-deals.html')
+
+def adminCategory(request):
+    return render(request, 'admin-category.html')
+
+
+def businessAccount(request):
+    return render(request, 'business-account.html')
