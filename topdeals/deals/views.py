@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 from topdeals.settings import BASE_DIR
 
@@ -56,5 +57,6 @@ def signup(request):
 
     return render(request, 'login.html', {'form': form})
 
-def adminCategory(request):
-    return render(request, 'admin-category.html')
+# @login_required(login_url='')
+def addDeals(request):
+    return render(request, 'add-deals.html')
