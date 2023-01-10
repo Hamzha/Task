@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% load widget_tweaks %} {% block content %}
+<div class="top-dynamic-min grid grid-cols-1 lg:grid-cols-5 lg:bg-[#F8F9FD]">
+    {% include 'sidebar.html' %}
+    <div class="col-span-1 lg:col-span-4 m-4 lg:ml-0">
+        <div class="flex flex-col gap-6 py-[1rem]">
+
+            <div class="flex items-center justify-between gap-4">
+                <h1 class="font-bold text-2xl text-[#1F1935]">Manage Deals</h1>
+                <div class="flex items-center gap-4">
+                    <div class="rounded-xl bg-white py-2 px-5 flex items-center gap-2">
+                        <div>
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.4344 0.665436C6.79903 0.665436 8.10777 1.20753 9.0727 2.17247C10.0376 3.13741 10.5797 4.44615 10.5797 5.81077C10.5797 7.08523 10.1127 8.25679 9.34486 9.1592L9.55859 9.37293H10.1839L14.1419 13.3309L12.9545 14.5183L8.99656 10.5603V9.93496L8.78283 9.72123C7.88041 10.4891 6.70886 10.9561 5.4344 10.9561C4.06977 10.9561 2.76104 10.414 1.7961 9.44908C0.831159 8.48414 0.289063 7.1754 0.289062 5.81077C0.289062 4.44615 0.831159 3.13741 1.7961 2.17247C2.76104 1.20753 4.06977 0.665436 5.4344 0.665436ZM5.4344 2.24862C3.45542 2.24862 1.87224 3.8318 1.87224 5.81077C1.87224 7.78975 3.45542 9.37293 5.4344 9.37293C7.41338 9.37293 8.99656 7.78975 8.99656 5.81077C8.99656 3.8318 7.41338 2.24862 5.4344 2.24862Z" fill="#868686"></path>
+                            </svg>
+                        </div>
+                        <input type="text" class="text-[#373737] outline-none w-full min-w-[120px]" placeholder="Search amazing deals... ">
+                    </div>
+                    <div>
+                        <button class="w-full bg-[#1F1935] font-semibold px-5 py-2 text-sm text-white rounded-md" data-bs-target="#AddDeal" data-bs-toggle="modal">
+                            + Add Deal
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+{% endblock %}
